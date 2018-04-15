@@ -1,0 +1,8 @@
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -d 127.0.0.1/32 -j ACCEPT
+-A INPUT -i wlan0 -p udp -m udp --dport 67 -j ACCEPT
+-A INPUT -i wlan0 -p udp -m udp --dport 53 -j ACCEPT
