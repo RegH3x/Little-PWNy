@@ -369,7 +369,7 @@ def get_conf_ap():
 		"serv_dns": serv_dns,  # List as value
 	}
 
-	if config_ap[dns_ap] == 'dns2proxy': config_ap["extf"] = extf
+	if config_ap['dns_ap'] == 'dns2proxy': config_ap["extf"] = extf
 
 	return confirm, config_ap
 
