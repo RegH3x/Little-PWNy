@@ -25,11 +25,11 @@ Soon will be ready a first beta
 
 ## INSTALL
 
-In order to use those scripts you need to install the programs on which depend
+This configuration was tested on a Raspberri B.
 
 These are the minimum prerequisites (in addition to python 2.7):
 
-`# apt-get install hostapd redsocks iptables iptables-persistent ssh killall`
+`# apt-get install hostapd dnsmasq redsocks iptables iptables-persistent ssh killall`
 
 Python modules
 
@@ -47,7 +47,7 @@ Set name of your machine in '/etc/hosts'
 	
 	127.0.1.1 little_pwny
 
-Set name at your machine:
+Set a name to your machine:
 
 `# hostname little_pwny`
 
